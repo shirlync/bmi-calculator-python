@@ -1,0 +1,29 @@
+# Below is Python Code ran on Jupyter Notebook
+
+BMI Calculator
+BMI = (weight in kg) / (height in m * height in m)
+
+## Code ##
+
+name = input("Enter your name: ")
+
+weight = float(input("How much is your weight (in kg)? "))
+
+height = float(input("How much is your height (in cm)? "))
+
+bmi = round((weight) / ((height/100)*(height/100)), 2)
+
+if bmi >= 40:
+    print(name, ", your BMI is", bmi, ". You are morbidly obese. Extremely high health risk.")
+elif bmi >= 35:
+    print(name, ", your BMI is", bmi, ". You are severely obese. Very high health risk.")
+elif bmi >= 30:
+    print(name, ", your BMI is", bmi, ". You are obese. High health risk.")
+elif bmi >= 25:
+    print(name, ", your BMI is", bmi, ". You are overweight. Increased health risk.")
+elif bmi >= 18.5:
+    print(name, ", your BMI is", bmi, ". You are normal weight. Minimal health risk.")
+elif bmi > 1:
+    print(name, ", your BMI is", bmi, ". You are underweight. Minimal health risk.")
+else:
+    print("You have keyed-in invalid numbers.")
